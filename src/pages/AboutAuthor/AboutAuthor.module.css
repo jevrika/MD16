@@ -1,0 +1,10 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding:50px;
+}
+
+.heading{
+  margin:0;
+}

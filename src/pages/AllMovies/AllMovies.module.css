@@ -1,0 +1,80 @@
+
+.movieTitle{
+  font-size: 26px;
+  text-align: center;
+}
+
+.movieInfoItem{
+  font-weight: 300;
+}
+
+.movieInfoTitle{
+  font-size: 20px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.buttonWrapper{
+  margin:0;
+  padding:0;
+  width: 100%;
+  position: absolute;
+  bottom:0;
+  margin-bottom: 15px;
+
+}
+
+@media only screen and (max-width: 405px) {
+  .wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+    padding:25px;
+  }
+  .movieWrapper{
+    border: 1px solid #cecece;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    max-height: 700px;
+    height: 100%;
+    border-radius: 10px;
+    padding:70px 15px;
+    gap:5px;
+    position: relative;
+  }
+  
+}
+
+
+@media only screen and (min-width: 405px) {
+  .wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap:15px;
+    padding:50px;
+  }
+  .movieWrapper{
+    border: 1px solid #cecece;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    max-height: 700px;
+    height: 100%;
+    border-radius: 10px;
+    padding:70px 15px;
+    gap:5px;
+    position: relative;
+  }
+  
+}

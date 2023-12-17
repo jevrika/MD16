@@ -1,0 +1,55 @@
+.movieWrapper{
+  border: 1px solid grey;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  max-width: 400px;
+  width: 100%;
+  padding: 25px;
+}
+
+.buttonWrapper{
+  display: flex;
+  flex-direction: column;
+  gap:5px;
+  margin:0;
+
+}
+
+.movieTitle{
+  font-size: 30px;
+  text-align: center;
+}
+
+.movieInfoTitle{
+  font-size: 20px;
+  text-align: center;
+  font-weight: 500;
+}
+.input{
+  border: 1px solid rgb(227, 227, 227);
+  border-radius: 25px;
+  padding:15px;
+  width: 90%;
+}
+
+.genreImage{
+  width: 50px;
+}
+
+.movieInfoItem{
+  font-weight: 300;
+}
+
+
+
+
+.inputAndButtonWrapper{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  width: 100%;
+}

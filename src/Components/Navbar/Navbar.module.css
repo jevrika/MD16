@@ -1,0 +1,37 @@
+.navbar{
+  display: flex;
+  flex-direction: row;
+  padding: 25px 0;
+}
+
+.linkWrapper{
+  display: flex;
+  gap:50px;
+}
+
+.navbarItem{
+  text-decoration: none;
+  color:rgb(103, 102, 102);
+  font-size: 25px;;
+  font-weight: 500;
+  
+  &.active {
+    font-weight: 800;
+    font-size: 26px;
+    color:#000000
+  }
+}
+
+@media only screen and (max-width: 320px) {
+
+  .navbar{
+    display: flex;
+    flex-direction: column;
+    padding: 25px 0;
+  }
+  .linkWrapper{
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+  }
+}

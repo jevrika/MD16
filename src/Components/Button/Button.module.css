@@ -1,0 +1,37 @@
+button {
+  width: 90%;
+  border: none;
+  border-radius: 25px;
+  padding: 15px 25px;
+  cursor: pointer;
+  opacity: 1;
+  font-size: 16px;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.buttonWrapper{
+  display: flex;
+  justify-content: center;
+  bottom:0;
+  margin:0;
+  width: 100%;
+}
+
+.openButton {
+  background-color: #cfeff5;
+}
+
+.goBackButton{
+  background-color: #cfeff5;
+}
+
+.deleteButton{
+  background-color: #fec5c5;
+}
+.addCommentButton, .submitCommentButton{
+  background-color: #B3D3B8;
+}
+
