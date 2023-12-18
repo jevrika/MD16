@@ -1,16 +1,33 @@
 import { NavLink } from 'react-router-dom';
 import styles from './Navbar.module.css'
 
+const navItems = [
+  {
+    label: 'About Project',
+    path: '/about_project'
+  },
+  {
+    label: 'Movies',
+    path: '/movies'
+  },
+  {
+    label: 'About Author ',
+    path: '/about_author'
+  }
+]
+
 const NavBar = () => {
-  return ( 
+  return (
     <nav className={styles.navbar}>
       <div className={styles.linkWrapper}>
-        <NavLink className={({isActive}) => `${styles.navbarItem} ${isActive ? styles.active : ''}`} to='/about_project'> About Project </NavLink>
-        <NavLink className={({isActive}) => `${styles.navbarItem} ${isActive ? styles.active : ''}`} to='/movies'> Movies </NavLink>
-        <NavLink className={({isActive}) => `${styles.navbarItem} ${isActive ? styles.active : ''}`}to='/about_author'> About Author </NavLink>
+        {navItems.map(({ path, label }) => (
+          <NavLink key={path} to={path} className={({ isActive }) => `${styles.navbarItem} ${isActive ? styles.active : ''}`}>
+            {label}
+          </NavLink>
+        ))}
       </div>
     </nav>
-   );
+  );
 }
- 
+
 export default NavBar;

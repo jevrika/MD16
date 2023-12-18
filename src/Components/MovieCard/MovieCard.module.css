@@ -12,11 +12,11 @@
 }
 
 .buttonWrapper{
+  padding-top:20px;
   display: flex;
   flex-direction: column;
-  gap:5px;
+  gap:10px;
   margin:0;
-
 }
 
 .movieTitle{
@@ -43,9 +43,6 @@
 .movieInfoItem{
   font-weight: 300;
 }
-
-
-
 
 .inputAndButtonWrapper{
   display: flex;

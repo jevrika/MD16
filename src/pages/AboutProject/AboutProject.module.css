@@ -1,8 +1,10 @@
 .wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   padding:50px;
+  align-items: center;
+  text-align: center;
+  gap:10px;
 }
 
 .list{
@@ -10,14 +12,22 @@
   flex-direction: column;
   margin:0;
   padding-left:25px;
+  align-items: flex-start;
 }
 
 .listItem{
   margin:0;
+  font-size: 20px;
 }
 
 .text{
   margin:0;
-  font-size: 16px;
-  line-height: 1.5rem;
+  font-size: 20px;
+}
+
+.aItems{
+  text-decoration: none;
+  font-size: 20px;
+  font-weight:500 ;
+  color: black;
 }
